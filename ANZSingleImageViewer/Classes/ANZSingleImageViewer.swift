@@ -96,7 +96,8 @@ extension ANZSingleImageViewer {
         
         let viewer = ANZSingleImageViewer()
         viewer.image = image
-        
+        viewer.modalTransitionStyle = .crossDissolve
+
         if vc is ANZSingleImageViewerSourceTransitionDelegate {
             let animator = AnimatedTransitioning()
             viewer.animator = animator
